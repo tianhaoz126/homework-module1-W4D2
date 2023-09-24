@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body id="contact">
+<body id="contact" onload="disableButton(true)">
 <div id="container">
     <header>
         <div class="main-header">
@@ -73,12 +73,12 @@
                 <textarea></textarea>
             </div>
             <div class="randomcode">
-                <input type="text" name="randomcode" placeholder="Enter characters">
+                <input type="text" name="randomcode" placeholder="Enter characters" id="codeentered">
                 <p id="codes"></p>
             </div>
         
             <div class="button">
-                <input type="submit" value="Inquire">
+                <input type="submit" value="Inquire" id="submit">
             </div> 
         </fieldset>  
         </form>
